@@ -1,27 +1,12 @@
+// app/page.js
 import Link from 'next/link';
+import Navbar from '../components/NavBar'; // Ensure this path is correct
 import styles from './Homepage.module.css';
 
 const HomePage = () => {
   return (
     <>
-      <nav className={styles.navbar}>
-        <div className={styles.container}>
-          <Link href="/" className={styles.logo}>ToMe</Link>
-          <ul className={styles.navLinks}>
-            <li><Link href="/">Home</Link></li>
-            <li><Link href="/about">About</Link></li>
-            <li><Link href="/services">Services</Link></li>
-            <li><Link href="/contact">Contact</Link></li>
-          </ul>
-
-          <ul className={styles.authlinks}>
-            <li><Link href="/">LogIn</Link></li>
-            <li><Link href="/about">SignUp</Link></li>
-          </ul>
-
-        </div>
-      </nav>
-
+      <Navbar />
       <div className={styles.container}>
         {/* Hero Section */}
         <section className={styles.hero}>
@@ -78,7 +63,7 @@ const HomePage = () => {
         <footer className={styles.footer}>
           <p>Follow us on social media</p>
           <div className={styles.socialLinks}>
-            <a href="https://twitter.com" >Twitter</a>
+            <a href="https://twitter.com">Twitter</a>
             <a href="https://facebook.com">Facebook</a>
             <a href="https://instagram.com">Instagram</a>
           </div>

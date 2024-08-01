@@ -3,6 +3,7 @@
 
 import { useState } from 'react';
 import useAuth from '../../hooks/useAuth';
+import styles from '../../app/Homepage.module.css';
 
 const LoginForm = () => {
   const [email, setEmail] = useState('');
@@ -15,8 +16,8 @@ const LoginForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
+    <form onSubmit={handleSubmit} className={styles.formm}>
+      <div >
         <label>Email</label>
         <input
           type="email"
@@ -32,7 +33,7 @@ const LoginForm = () => {
           onChange={(e) => setPassword(e.target.value)}
         />
       </div>
-      <button type="submit">Login</button>
+      <button type="submit" className={styles.buttonsubmit}>Login</button>
     </form>
   );
 };

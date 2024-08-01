@@ -7,8 +7,8 @@
 }
 
 .navbar {
-    background-color: #333;
-    color: white;
+    background-color: rgba(17, 34, 51, 0.2);
+    color: #123;
     padding: 1rem 0;
     position: fixed;
     width: 100%;
@@ -28,29 +28,30 @@
     font-size: 1.5rem;
     font-weight: bold;
     text-decoration: none;
-    color: white;
+    color: #123;
 }
-  
+
 .navLinks {
     list-style: none;
     display: flex;
-    gap: 1rem;
+    gap: 3rem;
+    color: #123;
 }
-  
+
 .navLinks li {
     margin: 0;
 }
-  
+
 .navLinks a {
     text-decoration: none;
-    color: white;
+    color: #123;
     font-size: 1rem;
 }
-  
+
 .navLinks a:hover {
     text-decoration: underline;
 }
-  
+
 .authlinks{
     display: flex;
     list-style: none;
@@ -117,4 +118,84 @@
     margin: 0 10px;
     text-decoration: none;
     color: #0070f3;
+}
+
+/*Login*/
+.loginn{
+    top: 50%;
+    margin: 200px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.loginn h1{
+    padding: 30px;
+    font-size: 30px;
+}
+
+.formm{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #f2f2f2;
+    padding: 30px;
+    width: 450px;
+    border-radius: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+.form button {
+    align-self: flex-end;
+}
+
+.flex-column > label {
+    color: #151717;
+    font-weight: 600;
+}
+
+.inputForm {
+    border: 1.5px solid #ecedec;
+    border-radius: 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+.input {
+    margin-left: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 85%;
+    height: 100%;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.inputForm:focus-within {
+    border: 1.5px solid #2d79f3;
+}
+
+.buttonsubmit {
+    margin: 20px 0 10px 0;
+    background-color: #151717;
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 10px;
+    height: 50px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.buttonsubmit:hover {
+    background-color: #252727;
 }
